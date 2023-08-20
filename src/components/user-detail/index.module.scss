@@ -1,0 +1,40 @@
+.userInfoBlock {
+  display: flex;
+  margin: 5px;
+
+  .title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .description{
+    padding-left: 8px;
+    font-size: 14px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.userLink {
+  display: block;
+  padding-left: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    color: #007bff;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+

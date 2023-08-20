@@ -1,0 +1,38 @@
+.searchResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.userAvatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+
+  @media (min-width: 768px) {
+    margin-left: 40px;
+  }
+}
+
+
+

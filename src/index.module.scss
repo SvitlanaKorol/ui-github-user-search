@@ -1,0 +1,64 @@
+/* BREAKPOINTS (px)
+  xs: 300, sm: 592, md: 784, lg: 1200, xl: 1440,
+*/
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #FFFFFF;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 768px) {
+    max-width: 700px;
+    padding: 40px;
+  }
+}
+
+.searchForm {
+  display: flex;
+  max-width: 100%;
+  margin: 30px;
+
+  .input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background: #f6f8fa;
+    color: #616161;
+    outline: none;
+  }
+
+  .button {
+    padding: 5px 10px;
+    background-color: #000000;
+    border-radius: 0 4px 4px 0 ;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #333333;
+    }
+  }
+}
+
+.input::placeholder {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
